@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mengenal Hari dan Bulan dalam Bahasa Jepang</title>
+  <style>
+    body {font-family: Poppins, sans-serif; background: #fff8f0; color: #333; margin: 0; padding: 0;}
+    header, footer {background: #ff7b54; color: white; text-align: center; padding: 15px;}
+    section {padding: 20px; margin: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);}
+    table {width: 100%; border-collapse: collapse; margin-top: 10px;}
+    th, td {border: 1px solid #ffb38a; padding: 8px; text-align: center;}
+    th {background: #ffe5d9;}
+    button {background: #ff7b54; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;}
+    button:hover {background: #ff956b;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌸 Mengenal Hari dan Bulan dalam Bahasa Jepang 🌸</h1>
+  </header>
+
+  <section>
+    <h2>🗓️ Hari dalam Bahasa Jepang</h2>
+    <table>
+      <tr><th>Indonesia</th><th>Romaji</th><th>Kanji</th></tr>
+      <tr><td>Senin</td><td>Getsuyōbi</td><td>月曜日</td></tr>
+      <tr><td>Selasa</td><td>Kayōbi</td><td>火曜日</td></tr>
+      <tr><td>Rabu</td><td>Suiyōbi</td><td>水曜日</td></tr>
+      <tr><td>Kamis</td><td>Mokuyōbi</td><td>木曜日</td></tr>
+      <tr><td>Jumat</td><td>Kinyōbi</td><td>金曜日</td></tr>
+      <tr><td>Sabtu</td><td>Doyōbi</td><td>土曜日</td></tr>
+      <tr><td>Minggu</td><td>Nichiyōbi</td><td>日曜日</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>🌸 Bulan dalam Bahasa Jepang</h2>
+    <table>
+      <tr><th>Bulan</th><th>Romaji</th><th>Kanji</th></tr>
+      <tr><td>Januari</td><td>Ichi-gatsu</td><td>一月</td></tr>
+      <tr><td>Februari</td><td>Ni-gatsu</td><td>二月</td></tr>
+      <tr><td>Maret</td><td>San-gatsu</td><td>三月</td></tr>
+      <tr><td>April</td><td>Shi-gatsu</td><td>四月</td></tr>
+      <tr><td>Mei</td><td>Go-gatsu</td><td>五月</td></tr>
+      <tr><td>Juni</td><td>Roku-gatsu</td><td>六月</td></tr>
+      <tr><td>Juli</td><td>Shichi-gatsu</td><td>七月</td></tr>
+      <tr><td>Agustus</td><td>Hachi-gatsu</td><td>八月</td></tr>
+      <tr><td>September</td><td>Ku-gatsu</td><td>九月</td></tr>
+      <tr><td>Oktober</td><td>Jū-gatsu</td><td>十月</td></tr>
+      <tr><td>November</td><td>Jūichi-gatsu</td><td>十一月</td></tr>
+      <tr><td>Desember</td><td>Jūni-gatsu</td><td>十二月</td></tr>
+    </table>
+  </section>
+
+  <section style="text-align:center;">
+    <h2>🎯 Kuis Mini</h2>
+    <p>Apa bahasa Jepang untuk “Rabu”?</p>
+    <input type="text" id="answer" placeholder="Tulis jawabanmu...">
+    <br><br>
+    <button onclick="checkAnswer()">Cek Jawaban</button>
+    <p id="result"></p>
+  </section>
+
+  <footer>
+    <p>Media Ajar Digital Bahasa Jepang © 2025</p>
+  </footer>
+
+  <script>
+    function checkAnswer() {
+      const ans = document.getElementById("answer").value.trim().toLowerCase();
+      const result = document.getElementById("result");
+      if (ans === "suiyōbi" || ans === "suiyoubi") {
+        result.textContent = "✅ Benar! Rabu = 水曜日 (Suiyōbi)";
+        result.style.color = "green";
+      } else {
+        result.textContent = "❌ Salah. Coba lagi!";
+        result.style.color = "red";
+      }
+    }
+  </script>
+</body>
+</html>
